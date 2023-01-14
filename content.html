@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        
+        <title>Elijah's Budget Calculator</title>
+        <link href = "content-stylesheet.css" rel = "stylesheet" type = "text/css">
+
+    </head>
+    <body>
+        <div id = "introduction">
+            <h1 id = "intro-message">Welcome to Elijah's budget calculator!</h1>
+            <p>This project was created with the express purpose of calculating monthly expenses,
+                disposable income, and debt-to-income ratios and much more. By reporting these metrics 
+                as a percentage of income, the goal is to give a simple, quick and 
+                intuitive representation of expenses. Please see the usage section of this website for intructions
+                on usage and documentation.
+            </p>
+
+        </div>
+        <div>
+            <h3>Getting Started</h3>
+            <p>Below is a simple form that will be used to calculate your budget and usage expenditures for the month. 
+                All information information that you input will of course, remain confidential.
+            </p>
+        </div>
+        <br><br>
+
+        <div id = "monthly-income-prompt">
+            <form action = "example.txt" method = "POST">
+            <input type = "number" name = "monthly-income"  id = "monthly-income" min = "0" >
+            <label for = "monthly-income">Monthly Income: </label>
+            </form>
+        </div>
+
+        <div id = "multiple-choice">
+            <form action = "example.txt" method = "POST">
+                <h4>How many times do you get paid per month?</h4>
+                <input type = "radio" name = "checks-per-month" value = "1" id = "1">
+                <label for = "1">1</label>
+
+                <input type = "radio" name = "checks-per-month" value = "2" id = "2">
+                <label for = "2">2</label>
+
+                <input type = "radio" name = "checks-per-month" value = "1" id = "1">
+                <label for = "3">3</label>
+
+                <input type = "radio" name = "checks-per-month" value = "1" id = "1">
+                <label for = "4">4</label>
+            </form>
+        </div>
+
+        <div id = "bill-adder">
+            <form>
+                <h4>Enter the name of the bill followed by the monthly amount and then click the add button</h4>
+                <input type = "text" name = "bill-name" id = "bil-name">
+                <label for = "bill-name">Name:</label>
+
+                <input type = "number" name = "bill-amount" id = "bil-amount">
+                <label for = "bill-amount">Amount:</label>
+                <button type="button">Add</button>
+
+
+
+            </form>
+        </div>
+
+    </body>
+
+</html>
