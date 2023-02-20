@@ -36,3 +36,7 @@ div{
     background-color: mediumaquamarine;
     border-radius: 30px;
 }
+#prerequisites{
+    border: solid black;
+    text-align: center;
+}
