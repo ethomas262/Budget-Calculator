@@ -5,7 +5,9 @@
         
         <title>Elijah's Budget Calculator</title>
         <link href = "content-stylesheet.css" rel = "stylesheet" type = "text/css">
-        <script src = 'script.js'></script>
+
+        <script src = "script.js"></script>
+        
 
     </head>
     <body>
@@ -49,12 +51,12 @@
 
        
 
-            <form action = "example.txt" method = "POST" id = 'bill-adder'>
+            <form action = "script.js" method = "POST" id = 'bill-adder'>
 
                 <h4>Enter the name of the bill followed by the monthly amount and then click the add button</h4>
                 <label for = "bill-type">Type</label>
 
-                <select id = "bill-type" name = "bill-type">
+                <select id = "bill-type" name = "bill_type">
                     <option value = "Entertainment">Entertainment</option>
                     <option value = "Living Expense">Living Expense</option>
                     <option value = "Travel">Travel/Commerce</option>
@@ -62,18 +64,21 @@
                     <option value = "Education/Growth">Education/Growth</option>
 
                 </select>
-                <input type = "text" name = "bill-name" id = "bil-name" value = "Bill Name">
+                <input type = "text" name = "bill_name" id = "bill-name" >
                 
 
-                <input type = "number" name = "bill-amount" id = "bil-amount" value = "Amount">
+                <input type = "number" name = "bill_amount" id = "bill-amount">
                 <label for = "bill-amount">Amount:</label>
-                <button type="button" id = "add-button" onclick="addBill()">Add Bill</button>
+                <button type="button" id = "add-button" onclick = "display_bill()">Add Bill</button>
             </form>
         
 
         <ul id = "bill_display">
+            <li hidden = "true"></li>
             
         </ul>
+
+        
 
         
 
